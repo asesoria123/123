@@ -1,0 +1,548 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fuente y colores */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: #ff4081; /* Fucsia brillante */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  a:hover {
+    color: #ff4081;
+  }
+  
+  /* Cabecera */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ff4081; /* Fucsia */
+    color: white;
+  }
+  
+  header .logo h1 {
+    font-size: 2rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background-color: #8e24aa; /* Morado brillante */
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ff4081; /* Fucsia */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #d500f9; /* Violeta más oscuro */
+  }
+  
+  /* Secciones Generales */
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .benefits, .bonuses {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Añadido para que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  .benefit-item, .bonus-item {
+    background-color: #f1f8e9; /* Verde suave */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espaciado entre elementos */
+  }
+  
+  .benefit-item h3, .bonus-item h3 {
+    font-size: 1.5rem;
+    color: #ff4081; /* Fucsia */
+  }
+  
+  .cta-final {
+    background-color: #ff4081; /* Fucsia */
+    color: white;
+    padding: 40px;
+  }
+  
+  .cta-final h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-final p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Testimonios */
+  .testimonial {
+    font-style: italic;
+    margin-top: 20px;
+  }
+  
+  .testimonial-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .discount {
+    background-color: #00bcd4; /* Azul brillante */
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .discount p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #countdown {
+    font-size: 2rem;
+    color: #ff4081; /* Fucsia */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #8e24aa; /* Morado brillante */
+    color: white;
+  }
+  
+  /* Responsividad */
+  
+  /* Pantallas pequeñas (móviles) */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    header nav ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  
+    .benefits, .bonuses {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .benefit-item, .bonus-item {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .cta-final {
+      padding: 30px;
+    }
+  
+    .cta-final h2 {
+      font-size: 1.8rem;
+    }
+  
+    .cta-final p {
+      font-size: 1rem;
+    }
+  
+    .testimonial {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial-image img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  /* Pantallas muy pequeñas (móviles pequeños) */
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 1.8rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  
+    .section {
+      padding: 30px 10px;
+    }
+  
+    .benefit-item, .bonus-item {
+      width: 90%;
+    }
+  
+    .cta-final h2 {
+      font-size: 1.6rem;
+    }
+  
+    .cta-final p {
+      font-size: 0.9rem;
+    }
+  
+    .discount p {
+      font-size: 1.2rem;
+    }
+  }
+
+
+  /* Estilos para los íconos de las redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    color: white;
+    background-color: #ff4081; /* Fucsia */
+    padding: 20px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .social-icon:hover {
+    background-color: #d500f9; /* Violeta más oscuro */
+    transform: scale(1.1);
+  }
+  
+  .social-icon i {
+    font-size: 2.5rem; /* Tamaño más grande para los íconos */
+  }
+  
+  .social-icon span {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  .social-icon.whatsapp {
+    background-color: #25d366; /* Verde de WhatsApp */
+  }
+  
+  .social-icon.tiktok {
+    background-color: #69c9d0; /* Azul de TikTok */
+  }
+  
+  .social-icon.facebook {
+    background-color: #3b5998; /* Azul de Facebook */
+  }
+  
+  #what-contains {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #what-contains h2 {
+    font-size: 2rem;
+    color: #ff7f50;
+    margin-bottom: 20px;
+  }
+  
+  #what-contains p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .content-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .content-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ff7f50;
+    border-radius: 8px;
+  }
+  
+  .content-item h3 {
+    font-size: 1.2rem;
+    color: #ff7f50;
+    margin-bottom: 10px;
+  }
+  
+  .content-item p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+/* Transiciones en las imágenes */
+.content-item, .bonus-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ff7f50;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .content-item:hover, .bonus-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content-image, .bonus-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .content-item:hover .content-image, .bonus-item:hover .bonus-image {
+    opacity: 0.8;
+  }
+  
+  /* Estilos para la sección ¿Qué Contiene el eBook? */
+  #what-contains {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #what-contains h2 {
+    font-size: 2rem;
+    color: #ff7f50;
+    margin-bottom: 20px;
+  }
+  
+  #what-contains p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .content-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .content-item h3 {
+    font-size: 1.2rem;
+    color: #ff7f50;
+    margin-bottom: 10px;
+  }
+  
+  .content-item p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Media Queries para asegurar que la página sea responsiva */
+  @media (max-width: 768px) {
+    .content-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-list {
+      grid-template-columns: 1fr;
+    }
+  }
+/* Estilo para la sección de Testimonios (Galería de imágenes) */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #testimonials h2 {
+    font-size: 2rem;
+    color: #ff7f50;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ff7f50;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .testimonial-item:hover .testimonial-image {
+    opacity: 0.8;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .testimonial-gallery {
+      grid-template-columns: 1fr 1fr; /* 2 columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-gallery {
+      grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+  }
+   
+      
+/* Estilo para la sección de Testimonios (Galería de imágenes) */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #testimonials h2 {
+    font-size: 2rem;
+    color: #ff7f50;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ff7f50;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .testimonial-item:hover .testimonial-image {
+    opacity: 0.8;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .testimonial-gallery {
+      grid-template-columns: 1fr 1fr; /* 2 columnas en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-gallery {
+      grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+  }
+  
